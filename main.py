@@ -5,16 +5,6 @@ app = flask.Flask(__name__)
 
 @app.route("/")
 def home():
-    #第一步：获取要生成的二维码数据
-    #data = flask.request.args.get("data")
-
-    #第二步：生成二维码图像
-    #img = qrcode.make(data)
-
-    #第三步：页面上显示二维码图片
-    #img.save(r"C:\Users\Administrator\Desktop\day6.1\static\qr.png")
-    #return '<img src="/static/qr.png">'
-
     return flask.render_template('main.html')
 
 @app.route("/qr",methods=["POST"])
