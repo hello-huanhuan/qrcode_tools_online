@@ -1,7 +1,9 @@
 import flask
 import qrcode
+from datetime import timedelta
 # #from flask import render_template
 app = flask.Flask(__name__)
+app.config['SEND_FILE_MAX_AGE_DEFAULT']=timedelta(seconds=1)
 
 @app.route("/")
 def home():
