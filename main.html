@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>在线二维码生成器</title>
+</head>
+<body>
+    <form action="/qr" methods="POST">
+        <label>内容：</label>
+        <input type="text" name="data"/>
+        <button type="submit" style="margin-left: 10px">生成</button>
+    </form>
+    <img src="./static/qr.png" align="middle"/>
+</body>
+</html>
