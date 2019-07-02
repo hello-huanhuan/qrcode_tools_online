@@ -13,7 +13,7 @@
             var qr_img = document.getElementById("qr_img");
 
             // 给img对象的src属性赋值
-            qr_img.scr = "/qr?data=" + data;
+            qr_img.src = "/qr?data=" + data;
         }
 
         function enter_key_handle(){
@@ -23,10 +23,10 @@
         }
     </script>
 </head>
-<body onkeydown="enter_key_handle"> 
+<body onkeydown="enter_key_handle()"> 
         <label>内容：</label>
         <input type="text" name="data">
         <button type="button" style="margin-left: 10px" onclick="gen_qrcode()">生成</button><br/>
-        <img src="" id="qr_img"/>
+        <img src="" id="qr_img" />
 </body>
 </html>
